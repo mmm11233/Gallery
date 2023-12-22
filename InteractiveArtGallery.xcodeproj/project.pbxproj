@@ -11,6 +11,14 @@
 		397584F72B35837700AAF3EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397584F62B35837700AAF3EA /* ContentView.swift */; };
 		397584F92B35837800AAF3EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397584F82B35837800AAF3EA /* Assets.xcassets */; };
 		397584FC2B35837800AAF3EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397584FB2B35837800AAF3EA /* Preview Assets.xcassets */; };
+		397585042B358A4800AAF3EA /* ImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397585032B358A4800AAF3EA /* ImageComponent.swift */; };
+		397585072B358C7800AAF3EA /* TappGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397585062B358C7800AAF3EA /* TappGesture.swift */; };
+		3975850A2B35918000AAF3EA /* LongPressGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397585092B35918000AAF3EA /* LongPressGesture.swift */; };
+		3975850C2B35964100AAF3EA /* dragOffsetGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3975850B2B35964100AAF3EA /* dragOffsetGesture.swift */; };
+		3975850E2B35988E00AAF3EA /* ComposingGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3975850D2B35988E00AAF3EA /* ComposingGesture.swift */; };
+		397585102B359ABC00AAF3EA /* AnotherComposingGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3975850F2B359ABC00AAF3EA /* AnotherComposingGesture.swift */; };
+		397585122B359F2700AAF3EA /* PinchGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397585112B359F2700AAF3EA /* PinchGesture.swift */; };
+		397585142B361AE300AAF3EA /* GestureComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397585132B361AE300AAF3EA /* GestureComposition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		397584F62B35837700AAF3EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		397584F82B35837800AAF3EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		397584FB2B35837800AAF3EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		397585032B358A4800AAF3EA /* ImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComponent.swift; sourceTree = "<group>"; };
+		397585062B358C7800AAF3EA /* TappGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappGesture.swift; sourceTree = "<group>"; };
+		397585092B35918000AAF3EA /* LongPressGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGesture.swift; sourceTree = "<group>"; };
+		3975850B2B35964100AAF3EA /* dragOffsetGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragOffsetGesture.swift; sourceTree = "<group>"; };
+		3975850D2B35988E00AAF3EA /* ComposingGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingGesture.swift; sourceTree = "<group>"; };
+		3975850F2B359ABC00AAF3EA /* AnotherComposingGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherComposingGesture.swift; sourceTree = "<group>"; };
+		397585112B359F2700AAF3EA /* PinchGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchGesture.swift; sourceTree = "<group>"; };
+		397585132B361AE300AAF3EA /* GestureComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureComposition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +67,9 @@
 		397584F32B35837700AAF3EA /* InteractiveArtGallery */ = {
 			isa = PBXGroup;
 			children = (
-				397584F42B35837700AAF3EA /* InteractiveArtGalleryApp.swift */,
+				397585082B358FB800AAF3EA /* App */,
+				397585052B358C6700AAF3EA /* Gestures */,
+				397585022B358A3200AAF3EA /* Components */,
 				397584F62B35837700AAF3EA /* ContentView.swift */,
 				397584F82B35837800AAF3EA /* Assets.xcassets */,
 				397584FA2B35837800AAF3EA /* Preview Content */,
@@ -65,6 +83,36 @@
 				397584FB2B35837800AAF3EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		397585022B358A3200AAF3EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				397585032B358A4800AAF3EA /* ImageComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		397585052B358C6700AAF3EA /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				397585062B358C7800AAF3EA /* TappGesture.swift */,
+				397585092B35918000AAF3EA /* LongPressGesture.swift */,
+				3975850B2B35964100AAF3EA /* dragOffsetGesture.swift */,
+				3975850D2B35988E00AAF3EA /* ComposingGesture.swift */,
+				3975850F2B359ABC00AAF3EA /* AnotherComposingGesture.swift */,
+				397585112B359F2700AAF3EA /* PinchGesture.swift */,
+				397585132B361AE300AAF3EA /* GestureComposition.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		397585082B358FB800AAF3EA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				397584F42B35837700AAF3EA /* InteractiveArtGalleryApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397585042B358A4800AAF3EA /* ImageComponent.swift in Sources */,
+				3975850E2B35988E00AAF3EA /* ComposingGesture.swift in Sources */,
 				397584F72B35837700AAF3EA /* ContentView.swift in Sources */,
 				397584F52B35837700AAF3EA /* InteractiveArtGalleryApp.swift in Sources */,
+				397585142B361AE300AAF3EA /* GestureComposition.swift in Sources */,
+				3975850A2B35918000AAF3EA /* LongPressGesture.swift in Sources */,
+				3975850C2B35964100AAF3EA /* dragOffsetGesture.swift in Sources */,
+				397585072B358C7800AAF3EA /* TappGesture.swift in Sources */,
+				397585102B359ABC00AAF3EA /* AnotherComposingGesture.swift in Sources */,
+				397585122B359F2700AAF3EA /* PinchGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InteractiveArtGallery/Preview Content\"";
+				DEVELOPMENT_TEAM = VK8W64RM87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InteractiveArtGallery/Preview Content\"";
+				DEVELOPMENT_TEAM = VK8W64RM87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

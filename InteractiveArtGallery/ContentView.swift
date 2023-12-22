@@ -8,16 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        ScrollView{
+            
+            VStack {
+                Text("Hello, in the Art Gallery!")
+                    .font(.title)
+                    .foregroundStyle(.purple)
+                    .bold()
+                LongPressGestureComponent()
+                TapGestureComponent()
+                dragOffsetGestureComponent()
+                ComposingGesture()
+                AnotherComposingGestureComponent()
+                PinchGestureComponent()
+                GestureCompositionView()
+            }
+            .padding()
         }
-        .padding()
     }
 }
+
 
 #Preview {
     ContentView()
